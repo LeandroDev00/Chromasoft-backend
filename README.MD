@@ -55,3 +55,8 @@ Após rodar esse comando, o Prisma cria automaticamente as classes e tipos neces
 Para mais detalhes, consulte a documentação oficial do Prisma. 🚀
 https://www.prisma.io/docs/orm/prisma-migrate/getting-started
 https://www.prisma.io/docs/orm/overview/databases/mysql#connection-url
+
+# 6 JWT e .env
+- Quando configurado login é preciso ser colocado sua secretPrivateKey criptografado em uma variavel de ambiente.
+- É preciso acessar o site [MD5 Hash Generator](https://www.md5hashgenerator.com/) e colocar uma informação de senha para que seja criptografada
+- para que no arquivo .env seja colocado na variavel de ambiente, exemplo: JWT=seuhashcriptogradado
