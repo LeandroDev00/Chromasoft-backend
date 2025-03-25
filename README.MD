@@ -1,3 +1,10 @@
+# Tecnologia utilizada
+- NodeJS v22.11.0
+- Express v4.21.2
+- MySql
+- Prisma
+- JsonWebToken(JWT)
+
 # :📜: Passos para rodar a aplicação
 
 # 1. Clone o repositório
