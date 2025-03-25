@@ -1,0 +1,2 @@
+npx prisma db pull - transformar o esquema de banco de dados em um esquema prisma
+npx prisma generate - 

@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Criar uma migration: yarn prisma migrate dev
+
+model User {
+  ID  Int     @id @default(autoincrement())
+  NOME String
+  SENHA String
+  EMAIL String @unique
+}
+
+model Tarefa {
+  ID Int   @id @default(autoincrement())
+  TITULO String
+  DESCRICAO String
+  STATUS String
+  DTCADASTRO DateTime @default(now())
+}
